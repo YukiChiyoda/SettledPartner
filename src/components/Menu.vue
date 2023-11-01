@@ -15,7 +15,6 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import Partner from "@/components/Partner.vue";
 
 const activeIndex = ref('1')
 const activeIndex2 = ref('1')
