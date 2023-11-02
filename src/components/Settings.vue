@@ -1,9 +1,10 @@
 <script setup>
 import {ref} from "vue";
 import {MoreFilled} from "@element-plus/icons-vue";
+
 const list = ref([
-    'Personal Information',
-    'TimeSetting',
+  'Personal Information',
+  'TimeSetting',
   'Schedule',
   'To-do-list',
   'Others',
@@ -13,22 +14,25 @@ const list = ref([
 <template>
   <div class="flex">
     <div class="setting" v-for="i in list" :key="i">
-      <div>{{i}}</div>
+      <div>{{ i }}</div>
       <div class="space"></div>
       <div class="icon">
-        <el-icon><MoreFilled /></el-icon>
+        <el-icon>
+          <MoreFilled/>
+        </el-icon>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.flex{
+.flex {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.setting{
+
+.setting {
   display: flex;
   width: 95%;
   height: 80px;
@@ -38,13 +42,16 @@ const list = ref([
   transition: all 0.2s;
   cursor: pointer;
 }
-.setting:hover{
+
+.setting:hover {
   height: 90px;
 }
-.space{
+
+.space {
   flex: 1;
 }
-.icon{
+
+.icon {
   margin-right: 5px;
 }
 </style>

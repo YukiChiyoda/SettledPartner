@@ -9,11 +9,11 @@
         <el-card class="box-card" v-for="i in 5" :key="i">
           <template #header>
             <div class="card-header">
-              <span>Schedule {{i}}</span>
+              <span>Schedule {{ i }}</span>
               <el-button class="button" text>Deal It</el-button>
             </div>
           </template>
-          <div v-for="o in 2" :key="o" class="text item">Description Line {{i}}.{{o}}</div>
+          <div v-for="o in 2" :key="o" class="text item">Description Line {{ i }}.{{ o }}</div>
         </el-card>
       </el-aside>
       <el-main>

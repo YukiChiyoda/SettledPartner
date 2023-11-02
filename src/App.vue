@@ -15,9 +15,11 @@ import Menu from "@/components/Menu.vue";
   box-shadow: 0 1px 0 var(--color-border);
   transition: all 0.2s;
 }
+
 .el-input__wrapper:hover {
   box-shadow: 0 1px 0 var(--color-border-hover);
 }
+
 .el-input__wrapper.is-focus {
   box-shadow: 0 1px 0 var(--color-border);
 }

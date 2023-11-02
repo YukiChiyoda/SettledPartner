@@ -44,7 +44,7 @@ h3 {
   color: var(--color-heading);
 }
 
-.input{
+.input {
   margin-top: 10px;
 }
 
