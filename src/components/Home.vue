@@ -1,41 +1,19 @@
 <script setup>
-const activities = [
-  {
-    content: 'Event start',
-    timestamp: '2018-04-15',
-  },
-  {
-    content: 'Approved',
-    timestamp: '2018-04-13',
-  },
-  {
-    content: 'Success',
-    timestamp: '2018-04-11',
-  },
-]
+
 </script>
 
 <template>
   <div class="common-layout">
     <el-container>
       <el-aside width="300px">
-        <el-card class="box-card">
+        <el-card class="box-card" v-for="i in 5" :key="i">
           <template #header>
             <div class="card-header">
-              <span>Schedule 1</span>
+              <span>Schedule {{i}}</span>
               <el-button class="button" text>Deal It</el-button>
             </div>
           </template>
-          <div v-for="o in 2" :key="o" class="text item">{{ 'Description Line ' + o }}</div>
-        </el-card>
-        <el-card class="box-card">
-          <template #header>
-            <div class="card-header">
-              <span>Schedule 2</span>
-              <el-button class="button" text>Deal It</el-button>
-            </div>
-          </template>
-          <div v-for="o in 2" :key="o" class="text item">{{ 'Description Line ' + o }}</div>
+          <div v-for="o in 2" :key="o" class="text item">Description Line {{i}}.{{o}}</div>
         </el-card>
       </el-aside>
       <el-main>
