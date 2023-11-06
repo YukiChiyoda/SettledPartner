@@ -49,6 +49,18 @@
   margin-left: 5px;
   margin-right: 5px;
 }
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  background-color: rgba(148, 156, 77, 0.1);
+}
+
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus, .el-menu--horizontal .el-menu-item:not(.is-disabled):hover {
+  color: rgba(148, 156, 77, 1);
+}
+
+.el-menu-item.is-active {
+  color: rgba(148, 156, 77, 0.8)
+}
 </style>
 
 <script lang="ts" setup>

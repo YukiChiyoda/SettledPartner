@@ -10,7 +10,7 @@ const text = ref([])
     <el-card class="box-card">
       <template #header>
         <div class="card-header">
-          <span>Assistant {{ $route.query.id }}</span>
+          <span>{{ $route.query.name }}</span>
         </div>
       </template>
       <div class="msgbox">
